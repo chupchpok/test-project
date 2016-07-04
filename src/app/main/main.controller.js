@@ -1,8 +1,10 @@
 export class MainController {
-  constructor () {
+  constructor ($log, jackpot) {
     'ngInject';
 
-    this.awesomeThings = [];
+    $log.info(jackpot);
+
+    this.jackpot = jackpot.data;
 
   }
 
